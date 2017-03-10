@@ -1,0 +1,42 @@
+name = hirexsr_02
+type = spherical
+author = mlreinke
+
+###NOTES###
+
+This setup file is for detector 1 of the HIREXSR diagnostic using
+a PILATUS detector.  Bragg reflector is a perfect crystal with delta function
+rocking curve.  Crystal/detector properties are the He-like crystal
+
+**1/18/10** setting crystal/det properties 
+**3/02/10** resetting ro,zo,gam,x0,x1,x2 based on z-focus/aligned CAD
+**3/18/10** resetting ro,zo,beta,gam,x0,x1,x2 based on w-focused/CAD
+            compared to laser alignment data
+**3/19/10** x0,x1,x2 based on comparisons to w,z, ellipse fits
+
+###DATA START###
+m_ro = 3.687 		;major radius of mirror center [meters]
+m_zo = -0.0068		;height of mirror center [meters]
+m_alpha = 0.0		;mirror rotation angle alpha [radians]
+m_beta  = 0.029		;mirror rotation angle beta [radians]
+m_gamma = 2.03		;mirror rotation angle gamma [radians]
+m_y = 6.4	  	;mirror width [centimeters]
+m_z = 2.7	   	;mirror height [centimeters]
+m_twod = 4.56216	;2d spacing of cystal/MLM [angstroms]
+m_iref = 1.0		;integrated reflectivity of rocking curve [0->1.0]
+m_rwid = 0.0		;rocking curve FWHM [arcsec]
+m_rad = 1.442		;radius of curvature of mirror [meters]
+x0 = 109.95,-60.12,-4.19 ;det coordinate system (center) [centimeters]
+x1 = 109.95,-60.12, 4.15 ;det coordinate system (zeta) [centimeters]
+x2 = 108.17,-63.37,-4.19 ;det coordinate system (xi) [centimeters]
+det_xi = 0.0172		;detector width [centimeters]
+det_zeta = 0.0172	;detector height[centimeters]
+xi = -1			;xi locations of detector centers [centimeters]
+zeta = -1		;zeta locations of detector centers [centimeters]
+xi_ch = 0.0172		;xi spacing of channels [centimeters]
+n_xi = 	195		;number of xi channels
+xi_o = 0		;xi location of center channel
+zeta_ch = 0.0172	;zeta spacing of channels [centimeters]
+n_zeta = 487		;number of zeta channels
+zeta_o = 0		;zeta location of center channel
+###DATA END###
